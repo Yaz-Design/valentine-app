@@ -118,14 +118,7 @@ export default function ValentineApp() {
       {/* Background - Photo Collage */}
       <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-red-50 to-pink-100">
         {/* Photo collage grid */}
-        <div style={{ 
-    backgroundImage: `url(${background})`,
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    minHeight: '100vh'
-        }}>
-   {/* Your other content goes here */}
-</div>
+        
 
       {/* Content */}
       <div className="relative z-10">

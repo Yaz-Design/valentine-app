@@ -263,7 +263,7 @@ export default function ValentineApp() {
                 Save the Date
               </p>
               <p className="text-5xl text-red-600 font-bold mt-4" style={{ fontFamily: "'Dancing Script', cursive" }}>
-                February 20
+                February 28
               </p>
               <button 
                 onClick={() => setShowYesPopup(false)}

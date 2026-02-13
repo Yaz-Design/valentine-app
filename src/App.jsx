@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import background from '.assets/valentine_collage_final_perfect.jpg';
+import background from './valentine_collage_final_perfect.jpg';
 
 
 export default function ValentineApp() {
@@ -117,6 +117,14 @@ export default function ValentineApp() {
       
       {/* Background - Photo Collage */}
       <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-red-50 to-pink-100">
+        <div style={{ 
+    backgroundImage: `url(${background})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    minHeight: '100vh'
+}}>
+   {/* Your other content goes here */}
+</div>
         {/* Photo collage grid */}
         
 

@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import background from '.assets/valentine_collage_final_perfect.jpg';
 
 
 export default function ValentineApp() {
@@ -117,21 +118,14 @@ export default function ValentineApp() {
       {/* Background - Photo Collage */}
       <div className="absolute inset-0 bg-gradient-to-br from-pink-100 via-red-50 to-pink-100">
         {/* Photo collage grid */}
-        <div className="absolute inset-0 opacity-30 grid grid-cols-4 grid-rows-3 gap-1 p-2">
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/taboushi_and_I2.jpg')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_0592.jpg')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_5115.JPG')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_1889.JPG')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_1977.JPG')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_2623.JPG')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_8836.jpg')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_5108.jpg')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_8450.JPG')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/taboushi_and_I2.jpg')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_0592.jpg')" }}></div>
-          <div className="bg-cover bg-center rounded-lg" style={{ backgroundImage: "url('/IMG_1977.JPG')" }}></div>
-        </div>
-      </div>
+        <div style={{ 
+    backgroundImage: `url(${background})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    minHeight: '100vh'
+        }}>
+   {/* Your other content goes here */}
+</div>
 
       {/* Content */}
       <div className="relative z-10">
